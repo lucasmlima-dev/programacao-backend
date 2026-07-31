@@ -12,5 +12,12 @@ const livro2 = {
   preco: 116.99,
   estoque: 8,
 };
+
+const livro3 = {
+  titulo: "O Menino do Pijama Listrado",
+  autor: "John Boyne",
+  preco: 47.62,
+  estoque: 3,
+};
 // Esta linha entrega os dois livros para os outros arquivos usarem
-module.exports = { livro1, livro2 };
+module.exports = { livro1, livro2, livro3 };
