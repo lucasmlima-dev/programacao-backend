@@ -1,40 +1,49 @@
 class Livro {
-    #preco;
-    #estoque;
+  #preco;
+  #estoque;
 
-    constructor(titulo, autor, preco, estoque) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.#preco = preco;
-        this.#estoque = estoque;
-    }
+  constructor(titulo, autor, preco, estoque) {
+    this.titulo = titulo;
+    this.autor = autor;
+    this.#preco = preco;
+    this.#estoque = estoque;
+  }
 
-    descrever() {
-        console.log("Titulo: " + this.titulo);
-        console.log("Autor: " + this.autor);
-        console.log("Preco: " + this.#preco);
-        console.log("Estoque: " + this.#estoque + " unidades");
-    }
+  descrever() {
+    console.log("Titulo: " + this.titulo);
+    console.log("Autor: " + this.autor);
+    console.log("Preco: " + this.#preco);
+    console.log("Estoque: " + this.#estoque + " unidades");
+  }
 
-    valorEmEstoque() {
-        return this.preco * this.estoque;
-    }
+  valorEmEstoque() {
+    return this.preco * this.estoque;
+  }
 
-    get preco() {
-        return this.#preco;
-    }
+  get preco() {
+    return this.#preco;
+  }
 
-    get estoque() {
-        return this.#estoque;
-    }
+  get estoque() {
+    return this.#estoque;
+  }
 
-    set preco(novoPreco) {
-        if (novoPreco < 0) {
-            console.log("ERRO: preco nao pode ser negativo. Valor recusado.");
-            return;
-        }
-        this.#preco = novoPreco;
+  set preco(novoPreco) {
+    if (novoPreco < 0) {
+      console.log("ERRO: preco nao pode ser negativo. Valor recusado.");
+      return;
     }
+    this.#preco = novoPreco;
+  }
+
+  vender(quantidade) {
+    if (quantidade > this.#estoque) {
+      console.log("ERRO: estoque insuficiente.");
+      return;
+    }
+    this.#estoque = this.#estoque - quantidade;
+    console.log("Venda registrada. Restam " + this.#estoque + " unidades.");
+  }
 }
 
-module.exports = Livro;     
+module.exports = Livro;
