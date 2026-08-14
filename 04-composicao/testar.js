@@ -15,6 +15,9 @@ const l2 = new Livro(
   999,
   catTec,
 );
+const carrinhoVazio = new Carrinho();
+console.log("Total: R$ " + carrinhoVazio.calcularTotal().toFixed(2));
+
 const carrinho = new Carrinho();
 carrinho.adicionarLivro(l1);
 carrinho.adicionarLivro(l2);
