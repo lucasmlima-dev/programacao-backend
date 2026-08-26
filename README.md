@@ -17,7 +17,7 @@ Curso Técnico em Desenvolvimento de Sistemas — Escola SENAI "Santo Paschoal C
 | 02 | [POO](./02-poo-js) | Introdução a Programação Orientada a Objetos |
 | 03 | [Herança & Polimorfismo](./03-heranca-polimorfismo) | Estudo de conceitos e aprendizado sobre Heranças e Polimorfismo em JavaScript |
 | 04 | [Diagramas](./04-composicao) | Estudo da integração dinámica entre conceitos aprendidos |
-| 05 | [MVC](./05-poo-js) | Estudo e aprendizado dos padrões MVC |
+| 05 | [MVC](./05-padrao-mvc) | Estudo e aprendizado dos padrões MVC |
 ## Projeto do semestre
 
 API de Gestão da Livraria — desenvolvida em grupo
